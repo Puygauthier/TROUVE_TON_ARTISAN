@@ -1,0 +1,34 @@
+# Fichiers Node.js à ignorer
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+
+# Fichiers de configuration sensibles
+.env
+
+# Fichiers de log
+logs/
+*.log
+
+# Dossiers Sequelize (si utilisés)
+migrations/
+seeders/
+
+# Fichiers SQL de dump éventuels
+*.sql
+
+# Dossiers Visual Studio Code
+.vscode/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Build React
+frontend/build/
+frontend/node_modules/
+frontend/.env
+
+# Cache
+*.cache
