@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config();
+require('dotenv').config({ path: './.env' }); // Chemin correct vers le fichier .env situé dans backend/
 
 const sequelize = new Sequelize(
   process.env.DB_NAME,

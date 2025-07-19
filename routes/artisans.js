@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Artisan = require('../models/artisan'); // Assure-toi que ce modèle est correct et exporté
+const Artisan = require('../models/artisan');
 
 console.log('routes/artisans.js chargé');
 
@@ -18,11 +18,24 @@ router.get('/', async (req, res) => {
 // POST /api/artisans - crée un nouvel artisan
 router.post('/', async (req, res) => {
   try {
-    const { nom, métier } = req.body;
-    if (!nom || !métier) {
-      return res.status(400).json({ error: 'Nom et métier sont requis' });
+    const { nom, specialite, note, ville, a_propos, email, site_web, categorie, top } = req.body;
+
+    if (!nom || !specialite || !note || !ville || !email || !categorie) {
+      return res.status(400).json({ error: 'Champs requis manquants' });
     }
-    const newArtisan = await Artisan.create({ nom, métier });
+
+    const newArtisan = await Artisan.create({
+      nom,
+      specialite,
+      note,
+      ville,
+      a_propos,
+      email,
+      site_web,
+      categorie,
+      top: top || false,
+    });
+
     res.status(201).json(newArtisan);
   } catch (error) {
     console.error(error);
@@ -34,7 +47,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   try {
     const id = req.params.id;
-    const { nom, métier } = req.body;
+    const { nom, specialite, note, ville, a_propos, email, site_web, categorie, top } = req.body;
 
     const artisan = await Artisan.findByPk(id);
     if (!artisan) {
@@ -42,7 +55,14 @@ router.put('/:id', async (req, res) => {
     }
 
     if (nom !== undefined) artisan.nom = nom;
-    if (métier !== undefined) artisan.métier = métier;
+    if (specialite !== undefined) artisan.specialite = specialite;
+    if (note !== undefined) artisan.note = note;
+    if (ville !== undefined) artisan.ville = ville;
+    if (a_propos !== undefined) artisan.a_propos = a_propos;
+    if (email !== undefined) artisan.email = email;
+    if (site_web !== undefined) artisan.site_web = site_web;
+    if (categorie !== undefined) artisan.categorie = categorie;
+    if (top !== undefined) artisan.top = top;
 
     await artisan.save();
     res.json(artisan);
