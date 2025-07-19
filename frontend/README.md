@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Trouve ton artisan !
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description du projet
 
-## Available Scripts
+**Trouve ton artisan !** est une plateforme web régionale qui met en relation les particuliers avec des artisans locaux de la région Auvergne-Rhône-Alpes.  
+Le projet comprend une application front-end en ReactJS (mobile-first, responsive) et une API back-end Node.js/Express avec une base de données MySQL.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Fonctionnalités principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Recherche d'artisans par nom et par catégorie  
+- Affichage détaillé des artisans avec leurs spécialités et coordonnées  
+- Navigation fluide grâce à React Router  
+- Formulaire de contact sécurisé  
+- Respect des normes d'accessibilité (WCAG 2.1)  
+- Intégration de la charte graphique officielle (police Graphik, couleurs spécifiques)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Front-end : ReactJS, Bootstrap 5, Sass  
+- Back-end : Node.js, Express, Sequelize ORM  
+- Base de données : MySQL  
+- Outils : React Router, Axios, Git, GitHub  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prérequis
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (version 16 ou supérieure)  
+- MySQL (version compatible avec Sequelize)  
+- npm (fourni avec Node.js)  
 
-### `npm run eject`
+### Setup du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Cloner ce dépôt GitHub :  
+   ```bash
+   git clone https://github.com/Puygauthier/TROUVE_TON_ARTISAN.git
