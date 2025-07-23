@@ -1,0 +1,23 @@
+[33mcommit 0bcb0ae8e39523ceaf7bdddfd00842e414f94f99[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: PUYGAUTHIER <puygauthier.nathalie@orange.fr>
+Date:   Sat Jul 19 15:02:30 2025 +0200
+
+    Ajout favicon,modification fichier
+
+[33mcommit bd8840ce1bd8d66e33782c158934df3c998b03d4[m
+Author: PUYGAUTHIER <puygauthier.nathalie@orange.fr>
+Date:   Sat Jul 19 08:51:49 2025 +0200
+
+    Nettoyage : suppression des dossiers et fichiers ignorés par .gitignore
+
+[33mcommit 8225ce4529e0b76d7daee64c96a6a38ff4e0df96[m
+Author: PUYGAUTHIER <puygauthier.nathalie@orange.fr>
+Date:   Sat Jul 19 08:50:28 2025 +0200
+
+    Ajout du .gitignore à la racine avec règles adaptées
+
+[33mcommit 2253916ec64274e54cdc5c8822933467d1413364[m
+Author: PUYGAUTHIER <puygauthier.nathalie@orange.fr>
+Date:   Sat Jul 19 08:23:15 2025 +0200
+
+    Premier commit - ajout des fichiers du projet

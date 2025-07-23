@@ -39,7 +39,7 @@ const Artisan = sequelize.define('Artisan', {
   categorie: { // propriété JS sans accent
     type: DataTypes.STRING,
     allowNull: false,
-    field: 'catégorie', // correspond au nom de colonne SQL avec accent
+    field: 'categorie', // correspond au nom de colonne SQL avec accent
   },
   top: {
     type: DataTypes.BOOLEAN,

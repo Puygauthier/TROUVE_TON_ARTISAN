@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-require('dotenv').config({ path: './.env' }); // Chemin correct vers le fichier .env situé dans backend/
+require('dotenv').config(); // .env est à la racine, pas besoin de spécifier un path
 
 const sequelize = new Sequelize(
   process.env.DB_NAME,
@@ -9,7 +9,7 @@ const sequelize = new Sequelize(
     host: process.env.DB_HOST,
     dialect: 'mysql',
     port: process.env.DB_PORT,
-    logging: false, // Mets true si tu veux voir les requêtes SQL dans la console
+    logging: false, // true pour afficher les requêtes SQL dans la console
   }
 );
 
