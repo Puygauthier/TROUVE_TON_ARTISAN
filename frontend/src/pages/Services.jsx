@@ -31,4 +31,3 @@ function Services({ artisans }) {
 }
 
 export default Services;
-

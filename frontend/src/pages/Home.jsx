@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import StarRating from '../components/StarRating'; // ajoute cette ligne en haut
+import StarRating from '../components/StarRating';
 
 function Home() {
   const [topArtisans, setTopArtisans] = useState([]);
