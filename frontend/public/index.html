@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Icône de l'onglet -->
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Trouve ton artisan !</title>
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0074c7" />
+
+    <!-- ✅ SEO -->
+    <title>Trouve ton artisan – Artisans qualifiés dans votre région</title>
+    <meta name="description" content="Trouvez un artisan qualifié près de chez vous pour tous vos travaux. Simple, rapide et gratuit !" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Accessibilité (mobile / contraste) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- ✅ Réseaux sociaux (Open Graph) -->
+    <meta property="og:title" content="Trouve ton artisan" />
+    <meta property="og:description" content="Trouvez un artisan qualifié pour vos travaux dans votre région." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="%PUBLIC_URL%/cover.jpg" /> <!-- à adapter si tu as une image -->
+
+    <!-- (optionnel) Préchargement de la police Graphik -->
+    <!-- <link rel="preload" href="/fonts/Graphik.woff2" as="font" type="font/woff2" crossorigin="anonymous" /> -->
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>JavaScript doit être activé pour utiliser ce site.</noscript>
     <div id="root"></div>
   </body>
 </html>

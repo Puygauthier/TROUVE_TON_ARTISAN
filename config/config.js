@@ -1,4 +1,7 @@
-require('dotenv').config();
+const path = require('path');
+
+// Corrigé : on remonte d'un dossier (..) pour aller dans backend/.env
+require('dotenv').config({ path: path.resolve(__dirname, '..', 'backend', '.env') });
 
 module.exports = {
   development: {
