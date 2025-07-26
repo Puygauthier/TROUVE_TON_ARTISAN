@@ -1,4 +1,5 @@
 # Trouve ton artisan !
+Une plateforme web pour trouver facilement des artisans locaux en Auvergne-Rhône-Alpes.
 
 ## Description du projet
 
