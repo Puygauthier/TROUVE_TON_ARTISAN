@@ -82,3 +82,25 @@ Le projet comprend les éléments suivants :
 - Dépôt GitHub public
 - Site web hébergé (URL à indiquer)
 
+---
+
+## Déploiement et accès en ligne
+
+Le projet est hébergé sur [Render.com](https://render.com).
+
+### URL du site en production
+
+[https://ton-nom-de-service.onrender.com](https://trouve-ton-artisan-j8c9.onrender.com/)
+
+
+### Configuration Render
+
+- **Build command :**  
+  `npm install && cd frontend && npm install && npm run build`
+
+- **Start command :**  
+  `node backend/index.js`
+
+Render automatise la construction et le lancement du service à chaque push sur la branche `main`.
+
+---
